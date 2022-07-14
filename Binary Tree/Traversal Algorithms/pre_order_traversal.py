@@ -8,6 +8,7 @@ Traverse the left subtree by recursively calling the pre-order method.
 Traverse the right subtree by recursively calling the pre-order method.
 
 """
+
 def preorder_print(self,start,traversal):
     """root->left->right"""
     if start:
