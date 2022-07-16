@@ -15,3 +15,11 @@ def preorder_print(self,start,traversal):
         traversal = self.preorder_print(start.left, traversal)
         traversal = self.preorder_print(start.right, traversal)
     return traversal
+
+"""
+if we check start(which is the current node) is empty or not .
+If not then we append start.value to the traversal string and recursively call
+preorder_print on start.left and start.right which are the right and left child of the current node.
+Finally, we will return the traversal in case start is not None .
+--- Traversal is a string that concatinates the value of nodes in an order we visit them. --- 
+"""
