@@ -75,7 +75,6 @@ class BinaryTree(object):
     def levelorder_print(self, start):
         if start is None:
             return
-
         queue = Queue()
         queue.enqueue(start)
 
