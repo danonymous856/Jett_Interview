@@ -12,7 +12,7 @@ Recursively defined, the height of a node is one greater than the max of its rig
 
 Below is an example of a binary tree labeled with heights of individual nodes:
 
-    pics ->
+![Screenshot 2022-07-21 234345](https://user-images.githubusercontent.com/81114860/180284731-912e40e2-1ab4-4a1c-81f1-81d4c6d3a24a.png)
 
 ## Algorithm
 
@@ -28,7 +28,6 @@ In lines 4-5, we recursively call the height method on the left child and the ri
 
 Let’s run this code step by step in the illustration below:
 
-->pics
 
 I hope the visuals are helpful to understand the algorithm.
 
