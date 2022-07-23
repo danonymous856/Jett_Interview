@@ -1,7 +1,6 @@
 """
 the main thing here is the function height but being a constructor we going to define every class and methods
 """
-
 class Node(object):
     def __init__(self, value):
         self.value = value
