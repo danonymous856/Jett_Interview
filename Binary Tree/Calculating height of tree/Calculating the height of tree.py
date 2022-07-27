@@ -20,10 +20,20 @@ class BinaryTree(object):
 
         return 1 + max(height_right,height_left)
 
+    def size_(self, node):
+        if node is None:
+            return 0
+
+        left = self.size_(node.left)
+        right = self.size_(node.right)
+
+        return  1+left+right
+        pass
+
 tree = BinaryTree(1)
 tree.root.left = Node(2)
 tree.root.right = Node(3)
 tree.root.left.left = Node(4)
 tree.root.left.right = Node(5)
 
-print(tree.height(tree.root))
+print(tree.size_(tree.root))
