@@ -26,7 +26,6 @@ class BST(object):
             else:
                 start.left = Node(new_val)
         pass
-
     def serach_helper(self, current, target):
         if current:
             if current.value == target:
