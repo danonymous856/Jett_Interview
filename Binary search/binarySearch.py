@@ -30,3 +30,8 @@ target = int(input("enter the number you want to find index for:"))
 
 tree = BinaryTree()
 print(tree.BinarySearch(array, start, end, target))
+
+
+
+
+

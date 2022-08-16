@@ -13,7 +13,7 @@ def Binary_search(arr,target,start,end):
     while start <= end:
         mid = (start+end)//2
         if target == arr[mid]:
-            return mid
+            return
         elif target <= arr[mid]:
             return Binary_search(arr,target,start,mid-1)
         return Binary_search(arr,target,mid+1,end)
