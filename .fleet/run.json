@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "python",
+            "name": "python run",
+            "arguments": ["Arrays\test.py"],
+        },
+
+    ]
+}

@@ -1,3 +1,5 @@
+import random
+
 class Node(object):
     def __init__(self,value):
         self.value = value
@@ -7,7 +9,6 @@ class Node(object):
 class BinaryTree(object):
     def __int__(self,root):
         self.root = Node(root)
-
     def BinarySearch(self,arr,start,end,target):
         """
         Recursive Binary Search
@@ -22,8 +23,13 @@ class BinaryTree(object):
                 return self.BinarySearch(arr,mid+1,end,target)
             return -1
 
-array = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+array = []
+
+for _ in range(10):
+    array.append(input(f"enter the number:"))
+
 print(array)
+
 start = int(0)
 end = int(len(array) - 1)
 target = int(input("enter the number you want to find index for:"))
