@@ -1,11 +1,19 @@
-def runningSum(n):
-    temp = 0
-    ans = []
+# def runningSum(n):
+#     temp = 0
+#     ans = []
+#
+#     for i in n:
+#         temp += i
+#         ans.append(temp)
+#
+#     return ans
+#
+# print(runningSum([1,2,3,4,5,6,7]))
 
-    for i in n:
-        temp += i
-        ans.append(temp)
+def running(n :list):
+    for i in range(1,len(n)):
+        n[i] += n[i-1]
 
-    return ans
+    return n
 
-print(runningSum([1,2,3,4,5,6,7]))
+print(running([1,2,3,4]))
